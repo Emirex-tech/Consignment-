@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <title>Frontierxpress.com & Cargo</title>
+    <!-- vendor -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="vendor/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="vendor/line-awesome/css/line-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css" integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="vendor/OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/WOW-master/css/animate.css">
+    <!-- vendor -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAyJ18IVB7b85oVV9ksZTEAzgS3Vd9mz88"></script>
+    <script type="text/javascript">
+        function initialize(lat, lang, varcontainer) {
+            var latlng = new google.maps.LatLng(lat, lang);
+            var settings = {
+                zoom: 15,
+                center: latlng,
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+                },
+                navigationControl: true,
+                navigationControlOptions: {
+                    style: google.maps.NavigationControlStyle.SMALL
+                },
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById(varcontainer), settings);
+
+            var companyPos = new google.maps.LatLng(lat, lang);
+            var companyMarker = new google.maps.Marker({
+                position: companyPos,
+                map: map,
+                title: ""
+            });
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col col-md-3">
+                    <a href="#" class="logo wow fadeInRight">
+                        <img class="img-fluid" src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col- col myclass">
+                    <div class="row justify-content-end social-bar-wrap">
+                      
+                        <div class="col-auto  d-md-block border px-3 py-1" style='margin-right:40%'>
+                            
+                                <a href="track-now.html" class="btn btn-sm btn-danger">Track</a> 
+                            
+                        </div>
+                        <div class="col-auto d-none d-sm-block border px-3 py-1">
+                            <div class="media align-items-center">
+                                <i class="la la-headphones text-danger font-weight-bold mr-2 la-2x"></i>
+                                <div class="media-body">
+                                    <p class="m-0"><a href="tel:+447570457754">+4475-7045-7754</a></p>
+                                    <a href="mailto:contact@frontierxpress.com.com"> contact@frontierxpress.com.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="border-top py-2 py-lg-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="rxtNavWrap" class="rxt-navigation-wrap">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md">
+                                    <a href="#">
+                                        <i class="mobOnly-menu-close la la-close" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="rxt-navigation">
+
+                                        <li class=" active ">
+                                            <a href="/">Home</a>
+
+                                        </li>
+
+
+                                        <li class="">
+                                            <a href="about-us.html">About Us</a>
+
+                                        </li>
+
+
+                                        <li class="has-sub ">
+                                            <a href="#">Our Services</a>
+
+                                            <ul>
+                                                <li><a href="Courier-Service.html">Courier Service</a></li>
+                                                <li><a href="E-Commerce.html">E-Commerce</a></li>
+                                                <li><a href="Custom-Clearance.html">Custom Clearance</a></li>
+                                                <li><a href="Air-Freight-Forwarding.html">Air Freight</a></li>
+                                                <li><a href="Ocean-Freight-Forwarding.html">Ocean Freight</a></li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="has-sub ">
+                                            <a href="Resources">Resources</a>
+
+                                            <ul>
+                                                <li><a href="documents.html">Documents</a></li>
+                                                <li><a href="Volumetric-Calculator.html">Volumetric Calculator</a></li>
+                                                <li><a href="Prohibited-Goods.html">Prohibited Goods</a></li>
+                                                <li><a href="Fuel-Surcharge">Fuel Surcharge</a></li>
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="">
+                                            <a href="track-now.html">Track</a>
+
+                                        </li>
+
+
+                                        <li class="">
+                                            <a href="inquiry.html">Inquiry</a>
+
+                                        </li>
+
+
+                                        <li class="">
+                                            <a href="Contact-Us.html">Contact Us</a>
+
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-auto">
+
+                                    <ul class="social">
+                                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fill-color-facebook"></i></a>
+                                        </li>
+                                        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fill-color-twitter"></i></a>
+                                        </li>
+                                        <li><a href="https://in.linkedin.com" target="_blank"><i class="fab fa-linkedin fill-color-linkedin"></i></a>
+                                        </li>
+                                        <li><a href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus fill-color-google-plus"></i></a>
+                                        </li>
+                                        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fill-color-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a href="#" class="rxt-nav-overlay"></a>
+                    </div>
+                    <div class="col-auto align-self-center mobOnly-rxt-nav-trigger-wrap">
+                        <a href="#rxtNavWrap" class="rxt-nav-trigger d-inline-block">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="initial">
+        <div class="banner-carousel owl-carousel">
+            <div>
+                <img class="first-slide img-fluid" src="synergyframe/17620319.jpg" alt="INTERNATIONAL DELIVERY">
+                <div class="container">
+                    <div class="carousel-caption bounceIn animated">
+                        <img class="mx-auto mb-2" src="images/car-heading-white.png">
+                        <h1>INTERNATIONAL DELIVERY</h1>
+                        <p>
+                        </p>
+                        <a class="btn btn-outline-warning" href="inquiry.html">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="first-slide img-fluid" src="synergyframe/874985842.jpg" alt="Ocean Freight Forwarding">
+                <div class="container">
+                    <div class="carousel-caption bounceIn animated">
+                        <img class="mx-auto mb-2" src="images/car-heading-white.png">
+                        <h1>Ocean Freight Forwarding</h1>
+                        <p>
+                        </p>
+                        <a class="btn btn-outline-warning" href="inquiry.html">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="first-slide img-fluid" src="synergyframe/1014468823.jpg" alt="Warehousing">
+                <div class="container">
+                    <div class="carousel-caption bounceIn animated">
+                        <img class="mx-auto mb-2" src="images/car-heading-white.png">
+                        <h1>Warehousing</h1>
+                        <p>
+                        </p>
+                        <a class="btn btn-outline-warning" href="inquiry.html">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="first-slide img-fluid" src="synergyframe/1392455183.jpg" alt="Door To Door Delivery">
+                <div class="container">
+                    <div class="carousel-caption bounceIn animated">
+                        <img class="mx-auto mb-2" src="images/car-heading-white.png">
+                        <h1>Door To Door Delivery</h1>
+                        <p>
+                        </p>
+                        <a class="btn btn-outline-warning" href="inquiry.html">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-color">
+        <div class="container">
+            <div class="align-items-center row">
+                <div class="col-md-12 text-center">
+                    <img class="wow fadeInLeft" src="images/car-heading.png" data-wow-delay="1s">
+                    <h4 class="font-weight-bold titel-sections">WELCOME </h4>
+                </div>
+                <div class="col-md-3 col-sm-5 col-xs-12 wow fadeInLeft d-none d-md-block">
+                    <img class="img-fluid" src="synergyframe/1419768587.png" alt="image">
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12 wow fadeInRight">
+                    <div class="about-sev-tag">
+                        <p>
+                            <strong>Frontierxpress.com </strong>most efficient and trust-able courier service providers who follow professional practices to deliver the best services.We offers services to a wide range of customers, each with
+                            their specific needs. We are located in Ahmedabad region, and are providing Air Freight, Sea Freight to our clients.We with our vast experience &amp; huge network of associates and forwarding companies are able to deliver your
+                            shipment worldwide. We believe that in the world of today&rsquo;s business every second counts and cost money. Understanding this we have strived to maintain our service standards to best of service benchmarks of today&rsquo;s
+                            times.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="counter bg-color initial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft mb-4 mb-md-0">
+                    <div class="counting">
+                        <div class="desc">
+                            <div class="icon"> <img src="synergyframe/1111995114.png">
+                                <h3 class="counter">20000+</h3>
+                            </div>
+                            <h5 class="text-white">Shipments</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft mb-4 mb-md-0">
+                    <div class="counting">
+                        <div class="desc">
+                            <div class="icon"> <img src="synergyframe/708509588.png">
+                                <h3 class="counter">122+</h3>
+                            </div>
+                            <h5 class="text-white">Clients</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft mb-4 mb-md-0">
+                    <div class="counting">
+                        <div class="desc">
+                            <div class="icon"> <img src="synergyframe/736022173.png">
+                                <h3 class="counter">1000+</h3>
+                            </div>
+                            <h5 class="text-white">Tons of Goods</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft mb-4 mb-md-0">
+                    <div class="counting">
+                        <div class="desc">
+                            <div class="icon"> <img src="synergyframe/2035954555.png">
+                                <h3 class="counter">45+</h3>
+                            </div>
+                            <h5 class="text-white">Countries</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-services text-center">
+        <img class="wow fadeInLeft" src="images/car-heading.png" data-wow-delay="1s">
+        <h4 class="font-weight-bold titel-sections text-center mb-4 mb-md-5">MORE CAPABILITIES</h4>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="media mb-3 mb-md-4">
+                        <i class="mr-3 align-self-center fas fa-truck fa-2x"></i>
+                        <div class="media-body text-left">
+                            <a href="Transportation" class="mt-0">Transportation</a>
+                            <p>We Provide Transportation of Shipments.</p>
+                        </div>
+                    </div>
+                    <div class="media mb-3 mb-md-4">
+                        <i class="mr-3 align-self-center fas fa-cog fa-2x"></i>
+                        <div class="media-body text-left">
+                            <a href="Supply" class="mt-0">Fast Supply</a>
+                            <p>We Provide Fast Supply To Your Shipments.</p>
+                        </div>
+                    </div>
+                    <div class="media mb-3 mb-md-4">
+                        <i class="mr-3 align-self-center fas fa-home fa-2x"></i>
+                        <div class="media-body text-left">
+                            <a href="Door-To-Door-Delivery" class="mt-0">Door To Door Delivery</a>
+                            <p>We Provide Door To Door Delivery.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="d-block">
+                        <img class="img-fluid rounded-circle" src="images/capibility.jpg">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media mb-3 mb-md-4">
+                        <i class="mr-3 align-self-center fas fa-archive fa-2x"></i>
+                        <div class="media-body text-left">
+                            <a href="Packaging-Storage" class="mt-0">Packaging & Storage</a>
+                            <p>We Provide Packaging and Storage.</p>
+                        </div>
+                    </div>
+                    <div class="media mb-3 mb-md-4">
+                        <i class="mr-3 align-self-center fas fa-lock fa-2x"></i>
+                        <div class="media-body text-left">
+                            <a href="Free-Packing" class="mt-0">Free Packing</a>
+                            <p>We Provide free packing of shipments.</p>
+                        </div>
+                    </div>
+                    <div class="media mb-3 mb-md-4">
+                        <i class="mr-3 align-self-center fas fa-clock fa-2x"></i>
+                        <div class="media-body text-left">
+                            <a href="On-Time-Delivery " class="mt-0">On Time Delivery </a>
+                            <p>We Provide On Time Delivery. </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_box_area py-5 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <img class="wow fadeInLeft" src="images/car-heading.png" data-wow-delay="1s">
+                <h4 class="font-weight-bold titel-sections mb-3 mb-md-5">SERVICES</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="service-slider owl-carousel">
+                        <div class="service_box_item text-center">
+                            <a href="Courier-Service.html" class="Courier Service">
+                                <img src="synergyframe/510812926.jpg" alt="Courier Service">
+                                 <span class="icon"><i class="la la-long-arrow-right"></i></span>
+                            </a>
+                            <div class="service_text">
+                                <a href="Courier-Service.html">Courier Service</a>
+                                <p class="mb-0 mt-4">Frontierxpress.com is serving across the length & width of the globe .We has tie-ups...</p>
+                            </div>
+                        </div>
+                        <div class="service_box_item text-center">
+                            <a href="E-Commerce.html" class="E-Commerce">
+                                <img src="synergyframe/1707003022.jpg" alt="E-Commerce">
+                                 <span class="icon"><i class="la la-long-arrow-right"></i></span>
+                            </a>
+                            <div class="service_text">
+                                <a href="E-Commerce.html">E-Commerce</a>
+                                <p class="mb-0 mt-4">Frontierxpress.com services directly with major eCommerce platforms.Since India had an...</p>
+                            </div>
+                        </div>
+                        <div class="service_box_item text-center">
+                            <a href="Air-Freight-Forwarding.html" class="Air Freight">
+                                <img src="synergyframe/415755408.jpg" alt="Air Freight">
+                                 <span class="icon"><i class="la la-long-arrow-right"></i></span>
+                            </a>
+                            <div class="service_text">
+                                <a href="Air-Freight-Forwarding.html">Air Freight</a>
+                                <p class="mb-0 mt-4">Frontierxpress.com are the International Air Freight Forwarding Company, gained expertise.</p>
+                            </div>
+                        </div>
+                        <div class="service_box_item text-center">
+                            <a href="Custom-Clearance.html" class="Custom Clearance">
+                                <img src="synergyframe/613270275.jpg" alt="Custom Clearance">
+                                 <span class="icon"><i class="la la-long-arrow-right"></i></span>
+                            </a>
+                            <div class="service_text">
+                                <a href="Custom-Clearance.html">Custom Clearance</a>
+                                <p class="mb-0 mt-4">Frontierxpress.com provide custom clearance facility and customized services as per the...</p>
+                            </div>
+                        </div>
+                        <div class="service_box_item text-center">
+                            <a href="Ocean-Freight-Forwarding.html" class="Ocean Freight">
+                                <img src="synergyframe/482627395.jpg" alt="Ocean Freight">
+                                 <span class="icon"><i class="la la-long-arrow-right"></i></span>
+                            </a>
+                            <div class="service_text">
+                                <a href="Ocean-Freight-Forwarding.html">Ocean Freight</a>
+                                <p class="mb-0 mt-4">Ocean Freight Forwarding is one of the key factors for strong global supply chain management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter counter2 bg-color initial">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 wow fadeInLeft text-left">
+                    <p class="text-white">Not sure how much would it cost you?</p>
+                    <h2 class="text-white">Click Inquiry Now for more information!!!</h2>
+                </div>
+                <div class="col-md-4 wow fadeInRown">
+                    <a class="btn btn-warning" href="inquiry.html">Inquiry Now</a>
+                    <!--  <a class="btn btn-outline-warning" href="#">Donwload.PPT</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-color bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="wow fadeInLeft" src="images/car-heading.png" data-wow-delay="1s">
+                    <h4 class="font-weight-bold titel-sections">OUR FORWARDERS </h4>
+                </div>
+
+                <div class="col-md-12 wow fadeInDown">
+                    <div class="owl-carousel forwarding initial">
+                        <img class="img-fluid" src="synergyframe/55018345.jpg">
+                        <img class="img-fluid" src="synergyframe/2041851736.jpg">
+                        <img class="img-fluid" src="synergyframe/930836527.jpg">
+                        <img class="img-fluid" src="synergyframe/1451610899.jpg">
+                        <img class="img-fluid" src="synergyframe/2141588745.jpg">
+                        <img class="img-fluid" src="synergyframe/652008679.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="h3 widget-title">Userful links</div>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" title="Home">Home</a> </li>
+                        <li><a href="about-us.html" title="About Us">About Us</a> </li>
+                        <li><a href="Courier-Service.html" title="Our Services">Our Services</a> </li>
+                        <li><a href="Resources" title="Resources">Resources</a> </li>
+                        <li><a href="track-now.html" title="Track">Track</a> </li>
+                        <li><a href="inquiry.html" title="Inquiry">Inquiry</a> </li>
+                        <li><a href="Contact-Us.html" title="Contact Us">Contact Us</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="h3 widget-title">Our Services</div>
+                    <ul class="list-unstyled">
+                        <li><a href="Courier-Service.html" title="Courier Service">Courier Service</a> </li>
+                        <li><a href="E-Commerce.html" title="E-Commerce">E-Commerce</a> </li>
+                        <li><a href="Air-Freight-Forwarding.html" title="Air Freight">Air Freight</a> </li>
+                        <li><a href="Custom-Clearance.html" title="Custom Clearance">Custom Clearance</a> </li>
+                        <li><a href="Ocean-Freight-Forwarding.html" title="Ocean Freight">Ocean Freight</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="h3 widget-title">Working Hours</div>
+                    <p>Monday-Saturday: 10:00 a.m. to 8:30 p.m
+                        <br> Sunday: Closed</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="h3 widget-title">Follow us</div>
+                    <p>Get in touch with our socials to get all new products and announcements</p>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="http://www.facebook.com" target="blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com" target="blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://in.linkedin.com" target="blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://plus.google.com" target="blank">
+                                <i class="fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com" target="blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <section class="bottom-bar bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-auto">
+                    <p class="mb-0 text-muted text-center"> 2025 | <a href="/">Frontierxpress.com & Cargo </a>| All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="scrollup"><i class="la la-long-arrow-up"></i></a>
+    <!-- Modal -->
+    <div class="modal fade" id="track-model" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header py-2">
+                    <h6 class="modal-title" id="exampleModalLabel">Track & Trace</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col"><input aria-invalid="false" aria-describedby="nf-error-140" class="form-control" type="number" value="" min="" max="" step="1" placeholder="Ex: 123456"></div>
+                        <div class="col-auto"><button type="button" class="bg-warning btn"> Track Now
+                            </button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- vendor -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/WOW-master/js/wow.min.js"></script>
+    <script src="vendor/OwlCarousel/js/owl.carousel.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- vendor -->
+    <script src="js/main.js"></script>
+    <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?57407';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"Chat us",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"left"
+  },
+  "brandSetting":{
+      "brandName":"WATI",
+      "brandSubTitle":"Typically replies within a day",
+      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about FrontierXpress",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"+447570457754"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+</body>
+
+</html>   
